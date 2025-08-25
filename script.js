@@ -36,4 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset();
     });
   }
+
+  // Back to top button visibility
+  const backToTopBtn = document.querySelector(".back-to-top");
+  window.addEventListener("scroll", () => {
+    if (backToTopBtn) {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    }
+  });
 });
