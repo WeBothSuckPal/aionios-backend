@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aionios Backend – reliable, modern backend solutions tailored for small businesses and entrepreneurs."
+    />
+    <title>Aionios Backend</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation & Hero -->
+    <!-- Added id="home" on header so the Home link in the navigation scrolls back to the top. -->
+    <header id="home" class="hero">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <a href="#" class="logo">Aionios Backend</a>
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#trust">Why Choose Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container hero-content">
+        <h1 class="hero-title">Aionios Backend</h1>
+        <p class="hero-subtitle">
+          Powerful backend solutions to drive your next great idea.
+        </p>
+        <!-- Primary call‑to‑action encourages visitors to request a custom quote -->
+        <a href="#contact" class="btn">Request a Quote</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          We build and maintain scalable, secure backend infrastructure so you can
+          focus on what matters: creating value for your users. Aionios is your
+          trusted partner for API design, data management, and cloud hosting.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>API Design</h3>
+            <p>
+              RESTful and GraphQL APIs tailored to your business needs, built
+              with best practices and security in mind.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Data Management</h3>
+            <p>
+              Expertise in SQL and NoSQL databases, ensuring your data is
+              organized, accessible, and secure.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Cloud Hosting</h3>
+            <p>
+              Deploy and scale your applications in the cloud with our
+              deployment and DevOps services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="trust" class="section">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Reliability</h3>
+            <p>
+              We deliver stable backend systems with 99.9% uptime so your
+              business never misses a beat.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Security</h3>
+            <p>
+              Your data is protected with industry‑standard encryption and
+              best practices in privacy.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Scalability</h3>
+            <p>
+              Our solutions grow with your business, handling surges in demand
+              gracefully.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section section-alt">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>
+              “Aionios transformed our backend infrastructure. Their attention to
+              security and scalability gave us confidence to scale our
+              application.”
+            </p>
+            <cite>— Tech Startup Founder</cite>
+          </div>
+          <div class="testimonial">
+            <p>
+              “Thanks to Aionios, our APIs are fast, reliable, and easy for
+              developers to integrate. The team’s communication was excellent.”
+            </p>
+            <cite>— Small Business Owner</cite>
+          </div>
+          <div class="testimonial">
+            <p>
+              “We needed a custom data management solution and Aionios delivered
+              on time and on budget. Highly recommended!”
+            </p>
+            <cite>— E‑commerce Manager</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>What services do you provide?</h3>
+          <p>
+            We offer API design, data management, and cloud hosting, tailored to
+            meet the needs of small businesses and entrepreneurs.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I get started?</h3>
+          <p>
+            Simply fill out the contact form below or send us an email. We'll
+            respond promptly to discuss your project requirements.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer custom packages?</h3>
+          <p>
+            Yes, we can tailor our services to suit your unique needs, whether
+            you're launching a startup or scaling an established product.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Interested in working together? Send us a message using the form
+          below, and we'll get back to you shortly.
+        </p>
+        <form id="contact-form" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <p id="form-response" class="form-response" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Aionios Backend. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
